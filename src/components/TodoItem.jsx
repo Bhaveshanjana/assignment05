@@ -25,7 +25,7 @@ const TodoItem = ({ todo }) => {
       <div className="flex-1 min-w-0">
         <p
           className={`text-gray-300 transition-all ${
-            todo.completed ? "line-through text-gray-800" : ""
+            todo.completed ? "line-through text-white" : ""
           }`}
         >
           {todo.text}

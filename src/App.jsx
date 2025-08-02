@@ -1,11 +1,10 @@
-import "./App.css";
-import AddTodoForm from './components/AddTodoForm';
+import AddTodoForm from "./components/AddTodoForm";
 import { TodoProvider } from "./components/context/todoContext";
-import TodoList from './components/TodoList';
-import TodoStats from './components/TodoState';
+import TodoList from "./components/TodoList";
+import TodoStats from "./components/TodoState";
+import ChatBot from "./components/ChatBot";
 
 function App() {
-
   return (
     <TodoProvider>
       <div className="min-h-screen bg-gradient-to-r from-[#343434] to-[#000000e2] py-8 px-4">
@@ -25,6 +24,7 @@ function App() {
             <TodoList />
             <TodoStats />
           </div>
+          <ChatBot />
         </div>
       </div>
     </TodoProvider>
